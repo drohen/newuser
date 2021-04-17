@@ -14,7 +14,7 @@ As super user
 		- `cd ~/newuser`
 		- `git submodule init`
 		- `git submodule update --init`
-- `cp -r ~/newuser/skel/* /etc/skel`
+- `cp -r ~/newuser/skel/.??* /etc/skel`
 
 ### Create user
 
@@ -32,5 +32,6 @@ As super user
 
 - `chsh -s $(which zsh) $new_user`
 	- set the shell for the new user to zsh
-- `runuser -l $new_user -c 'wget --quiet -O - https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash'`
+- `runuser -
+- `runuser -l $new_user -c 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended'`
 	- new user will receive oh-my-zsh tools
