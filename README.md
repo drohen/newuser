@@ -31,5 +31,5 @@ Note: `!user!` should be replaced with intended user's username
 
 ### Install zsh tools
 
-- `runuser -l !user! 'wget --quiet -O - https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash'`
+- `runuser -l !user! -c 'wget --quiet -O - https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash'`
 	- !user! will receive oh-my-zsh tools
