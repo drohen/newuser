@@ -10,11 +10,11 @@ As super user
 
 - `apt-get install vim zsh git curl make apt-utils python3.7 wget python3-pip nginx nodejs build-essential -y`
 - `git clone --recurse-submodules -j8 https://github.com/drohen/newuser.git`
-	- if `ls newuser/skel/plugins/zsh-autosuggestions` doesn't return anything:
-		- `cd newuser`
+	- if `ls newuser/skel/custom_zsh/plugins/zsh-autosuggestions` doesn't return anything:
+		- `cd ~/newuser`
 		- `git submodule init`
 		- `git submodule update --init`
-- `cp -r newuser/skel/* /etc/skel`
+- `cp -r ~/newuser/skel/* /etc/skel`
 
 ### Create user
 
