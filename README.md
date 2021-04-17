@@ -24,8 +24,9 @@ As super user
 	- create account for the new user
 - `passwd $new_user`
 	- Set the password for the new user
-- Optional: `usermod -aG sudo $new_user`
-	- Add the user to the sudo group
+- Optional:
+	- `usermod -aG sudo $new_user`
+		- Add the user to the sudo group
 
 ### Install zsh tools
 
