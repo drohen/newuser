@@ -10,7 +10,7 @@ As super user
 
 - `apt-get install vim zsh git curl make apt-utils python3.7 wget python3-pip nginx nodejs build-essential -y`
 - `git clone --recurse-submodules -j8 https://github.com/drohen/newuser.git`
-	- if `ls newuser/plugins/zsh-autosuggestions` doesn't return anything:
+	- if `ls newuser/skel/plugins/zsh-autosuggestions` doesn't return anything:
 		- `cd newuser`
 		- `git submodule init`
 		- `git submodule update --init`
