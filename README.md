@@ -18,18 +18,18 @@ As super user
 
 ### Create user
 
-Note: `!user!` should be replaced with intended user's username
-
-- `useradd -m !user!`
-	- !user! will be the username for the new user
-- `passwd !user!`
-	- Set the password for the new user with username !user!
-- `chsh -s $(which zsh) !user!`
-	- Set the shell for the new user with username !user!
-- Optional: `usermod -aG sudo !user!`
+- `new_user="!user!"
+	- `!user!` should be replaced with intended user's username
+- `useradd -m $new_user`
+	- create account for the new user
+- `passwd $new_user`
+	- Set the password for the new user
+- Optional: `usermod -aG sudo $new_user`
 	- Add the user to the sudo group
 
 ### Install zsh tools
 
-- `runuser -l !user! -c 'wget --quiet -O - https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash'`
-	- !user! will receive oh-my-zsh tools
+- `chsh -s $(which zsh) $new_user`
+	- set the shell for the new user to zsh
+- `runuser -l $new_user -c 'wget --quiet -O - https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | bash'`
+	- new user will receive oh-my-zsh tools
