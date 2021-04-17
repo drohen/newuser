@@ -1,0 +1,3 @@
+[submodule "skel/custom_zsh/plugins/zsh-autosuggestions"]
+	path = skel/custom_zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
