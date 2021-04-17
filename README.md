@@ -8,7 +8,7 @@ As super user
 ### Get files
 
 - `apt-get install vim zsh git curl make apt-utils python3.7 wget python3-pip nginx nodejs build-essential -y`
-- `git clone --recurse-submodules -j8 git@github.com:drohen/newuser.git`
+- `git clone --recurse-submodules -j8 https://github.com/drohen/newuser.git`
 
 ### Install zsh tools
 
