@@ -32,6 +32,5 @@ As super user
 
 - `chsh -s $(which zsh) $new_user`
 	- set the shell for the new user to zsh
-- `runuser -
 - `runuser -l $new_user -c 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended'`
 	- new user will receive oh-my-zsh tools
