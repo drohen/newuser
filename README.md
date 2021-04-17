@@ -8,7 +8,7 @@ As super user
 
 ### Get files (only required once as super user)
 
-- `apt-get install vim zsh git curl make apt-utils python3.8 wget python3-pip nginx nodejs build-essential -y`
+- `apt-get install vim zsh git curl make apt-utils python3.7 wget python3-pip nginx nodejs build-essential -y`
 - `git clone --recurse-submodules -j8 https://github.com/drohen/newuser.git`
 - `cp -r newuser/skel/* /etc/skel`
 
