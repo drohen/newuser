@@ -18,7 +18,7 @@ As super user
 
 ### Create user
 
-- `new_user="!user!"
+- `new_user="!user!"`
 	- `!user!` should be replaced with intended user's username
 - `useradd -m $new_user`
 	- create account for the new user
