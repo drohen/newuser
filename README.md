@@ -14,7 +14,7 @@ As super user
 		- `cd ~/newuser`
 		- `git submodule init`
 		- `git submodule update --init`
-- `cp -r ~/newuser/skel/.??* /etc/skel`
+- `cp -r ~/newuser/skel/. /etc/skel`
 
 ### Create user
 
