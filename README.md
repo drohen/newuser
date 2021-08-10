@@ -4,6 +4,9 @@ Boilerplate to setup a new user
 
 ## Setup
 
+- `sudo su`
+- `apt-get update && apt-get upgrade`
+
 As super user
 
 ### Get files (only required once as super user)
@@ -11,10 +14,11 @@ As super user
 - `apt-get install vim zsh git curl make apt-utils python3.7 wget python3-pip nginx nodejs build-essential -y`
 - `git clone --recurse-submodules -j8 https://github.com/drohen/newuser.git`
 	- if `ls newuser/skel/custom_zsh/plugins/zsh-autosuggestions` doesn't return anything:
-		- `cd ~/newuser`
+		- `cd newuser`
 		- `git submodule init`
 		- `git submodule update --init`
-- `cp -r ~/newuser/skel/. /etc/skel`
+		- `cd ..`
+- `cp -r newuser/skel/. /etc/skel`
 
 ### Create user
 
